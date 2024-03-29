@@ -1,8 +1,8 @@
 package ee.ut.cs.swt.nextdate;
 
-public class NDv1 {
+public class NDv12 {
 
-	public NDv1(int m, int d, int y)
+	public NDv12(int m, int d, int y)
 	{
 		int month, day, year; //varibles holding the month, day and year args
 		//Initialize the mont, day, and year, respectively
@@ -66,8 +66,8 @@ public class NDv1 {
 				tomorrowDay = 1;
 				tomorrowMonth = 1;
 			// To fix "Fault 2", uncomment the correct line 70 and comment out the incorrect line 69
-				if(year == 2022) //make sure the next year is within the permissible range
-//				if(year == 2021) //make sure the next year is within the permissible range
+//				if(year == 2022) //make sure the next year is within the permissible range
+				if(year == 2021) //make sure the next year is within the permissible range
 					return "Invalid Next Year";
 				else  //it was a permissible year - go ahead and increment the year
 					tomorrowYear = year +1;
