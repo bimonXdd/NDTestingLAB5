@@ -1,8 +1,8 @@
 package ee.ut.cs.swt.nextdate;
 
-public class NDv2 {
+public class NDv21 {
 
-	public NDv2(int m, int d, int y)
+	public NDv21(int m, int d, int y)
 	{
 		int month, day, year; //varibles holding the month, day and year args
 		//Initialize the mont, day, and year, respectively
@@ -96,11 +96,11 @@ public class NDv2 {
 						tomorrowMonth = 3;
 					}
 					// To seed "Fault 4", comment out the lines 99-100
-					//else
-					//	return "Invalid Input Date";
+					else
+						return "Invalid Input Date";
 				}
 				//
-				else if(day > 29) //invalid input as February will never have more than 29 days
+				else //if(day > 29) //invalid input as February will never have more than 29 days
 					return "Invalid Input Date";
 			}
 		}
